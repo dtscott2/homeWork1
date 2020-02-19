@@ -77,6 +77,11 @@ public class Controller implements Initializable
     }
 
     public void deleteSelectedButton(ActionEvent actionEvent) {
+        ObservableList<Employee> employeeSelected, allEmployees;
+        allEmployees = employeeListView.getItems();
+        employeeSelected = employeeListView.getSelectionModel().getSelectedItems();
+        employeeSelected.forEach(allEmployees::remove);
+
     }
 
 

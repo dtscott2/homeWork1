@@ -8,6 +8,9 @@ public class Employee implements Worker
     public String firstName;
     public String lastName;
     public UUID id;
+
+
+
     public boolean isActive;
 
     @Override
@@ -36,6 +39,10 @@ public class Employee implements Worker
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
+    }
+
+    public void setActive(boolean active) {
+        isActive = active;
     }
 
 }
